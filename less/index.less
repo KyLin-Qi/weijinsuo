@@ -1,0 +1,250 @@
+// 头部区域
+#header{
+    border-bottom: 1px solid #ccc;
+    
+    .container{
+        .row{
+            height: 40px;
+            div:first-child{
+                border-left: none;
+            }
+            .col-md-2{
+                position: relative;
+            }
+            .col-md-2:hover>img{        
+                    display: block;
+            }
+            >div{
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                color: #666;
+                border-left: 1px solid #ccc;
+                .btn-danger{
+                    color: #fff;
+                    background: #e92322;
+                }
+                img{
+                    position: absolute;
+                    left: 40px;
+                    top: 40px;
+                    width: 120px;
+                    height: 136px;
+                    display: none;
+                    z-index: 999;
+                }
+                a{
+                    text-decoration: none;
+                    color: #666;
+                }
+            }
+        }
+    }
+
+}
+
+// 导航区域
+.navbar{
+    margin-bottom: 0;
+    background-color: #fff;
+    .navbar-header{
+        .navbar-toggle{
+			margin-top: 23px;
+		}
+        // logo部分
+        .navbar-brand{
+            height: 80px;
+            line-height: 50px;
+            font-size: 30px;
+            .icon-icon{
+                color: #e92322;
+            }
+            .icon-logo{
+                color:#333; 
+            }
+        }
+
+    }
+    .navbar-nav{
+        .active{
+            >a{
+                border-bottom: 2px solid #e92322;
+                background-color: #f8f8f8; 
+            }
+        }
+            
+        >li{
+            >a{
+                 height: 80px;
+                 line-height: 50px;
+                 }
+            >a:hover{
+                    border-bottom: 2px solid #e92322;                   
+                    
+            }
+           }
+       
+    }
+}
+
+// 轮播图区域
+#slide{
+    #carousel-example-generic{
+        .carousel-inner{
+            .item{
+                .large-image{
+                    background-position: center;
+                    display: block;
+                    height: 410px;
+                }
+                .small-image{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 网站特色专题区域
+#featrue{
+    padding:40px 0;
+    .row{
+        >div{
+            margin-bottom: 10px;
+            .media{
+                a{
+                    text-decoration: none;
+                    color: #666;
+                    display: flex;
+                    width: 220px;
+                    align-items: center;
+                   
+                    &:hover{
+                        color: #e92322;
+                    }
+                   
+                    
+                }
+                @media(max-width:768px){
+					>a{
+						margin: 0px auto;
+					}
+				}
+
+            }
+        }
+    }
+}
+// 立即预约区域
+
+#booking{
+    border: 1px solid #ccc;
+   .container{
+            padding-top: 20px;
+            padding-bottom: 20px;
+       .pull{
+      
+           .pull-left{
+               float: left;
+           }
+           .pull-right{
+                float: right;
+        }
+       }
+      
+   } 
+}
+// 产品推荐区域
+
+#products{
+    background: #f0f0f0;
+    padding: 40px 0;
+   .container{
+      .nav-tabs{              
+          
+          li{
+              &.active{
+                background-color: #f0f0f0;
+                border-bottom: 3px solid #e92322;
+            }
+            >a{
+                border: none;
+                font-size: 16px;
+                color: #333;
+              }
+      }
+    }
+   }
+   .tab-content{
+       .tab-pane{
+           >.row{
+               >div:first-child{
+                   >.productBox{
+                       background-color: #e92322;
+                       color: white;
+                   }
+               }
+           }
+       }
+       .tab-pane{
+           .row{
+                .productBox{
+                    background-color: #fff;
+                    position: relative;
+                    display: flex;
+                    
+                    .product-left{
+                        height: 160px;
+                        flex: 1;
+                        >h4{ 
+                            text-align: center;
+                            line-height: 30px;
+
+                        }
+                        >.row{
+                            margin: 0;
+                                >div{
+                                    margin-bottom: 10px;
+                                    @media(min-width:992px) and (max-width:1196px){
+										padding: 0;
+									}
+								
+									@media(max-width:320px){
+										padding: 0 10px;
+									}
+                                    &:nth-child(2n){
+                                        text-align: right;
+                                    }
+                                    >p{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                        }
+                    }
+                    .product-right{
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 120px;
+                        height: 160px;
+                        border-left: 1px dashed #ccc;
+                        
+                        p{
+                            margin-bottom: 0;
+                            >strong{
+                                font-size:30px;
+                            }
+                           
+                            
+                        }
+                    }
+                }
+           }
+       }
+   }
+}

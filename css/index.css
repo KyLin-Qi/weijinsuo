@@ -1,0 +1,73 @@
+#header{
+    border-bottom: 1px solid #ccc;
+    height: 41px;
+}
+#header .container{
+    height: 100%;
+}
+#header .row{
+    height: 100%;
+}
+#header .row div{
+    border-left: 1px solid #ccc;
+    height: 100%;
+    /* line-height: 100%; */
+    line-height: 40px;
+    font-size: 12px;
+    
+}
+#header .row div:first-child{
+    border-left:none;
+}
+#header .row div a{
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+   
+}
+#header .row .glyphicon.glyphicon-chevron-down{
+    color: #666;
+}
+
+#header .row div .btn-danger{
+    font-size: 12px;
+    color: #fff;
+    background: #e92322;
+}
+
+.navbar{
+    border: none;
+    height: 80px;
+    margin-bottom: 0px;
+}
+.navbar div{
+    height: 100%;
+    /* line-height: 80px; */
+}
+
+.navbar .navbar-nav li a{
+    height: 100%;
+    line-height: 50px;
+}
+.navbar-brand{
+    height: 80px;
+    display: flex;
+    align-items: center;
+   
+}
+.navbar-brand>i{
+    font-size: 30px;
+    line-height: 80px;
+}
+.navbar-brand .icon-icon{
+    color: #e92322;
+}
+.navbar-brand .icon-logo{
+    color: #333333;
+}
+
+#slide #carousel-example-generic img{
+    /* height: 100%; */
+    
+}
+        
